@@ -37,5 +37,8 @@ line-length = 120
 [tool.ruff.lint]
 select = ["I", "E", "F"]
 
+[tool.hatch.build.targets.wheel]
+packages = ["src/endstone_essentialstone"]
+
 [tool.hatch.version]
 source = "vcs"
