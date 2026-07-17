@@ -361,7 +361,7 @@ wheels = [
 ]
 
 [[package]]
-name = "endstone-example"
+name = "essentialstone"
 source = { editable = "." }
 dependencies = [
     { name = "typing-extensions" },

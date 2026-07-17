@@ -1,6 +1,7 @@
 from endstone.plugin import Plugin
 from typing_extensions import override
 
+
 class EssentialStone(Plugin):
    prefix = "EssentialStone"
 
