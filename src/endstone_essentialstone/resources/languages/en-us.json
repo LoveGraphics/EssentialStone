@@ -6,13 +6,15 @@
         "home-created": "",
         "home-max-amount-reached": "",
         "home-teleporting-message": "",
-        "home-teleported-message": ""
+        "home-teleported-message": "",
+        "home-description": ""
     },
 
     "tpa": {
         "tpa-request-sent": "",
         "tpa-request-accepted": "",
         "tpa-request-aborted": "",
-        "tpa-request-expired": ""
+        "tpa-request-expired": "",
+        "tpa-description": "Test tpa---"
     }
 }
