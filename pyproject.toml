@@ -3,13 +3,14 @@ requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
 
 [project]
-name = "endstone-example"
+name = "EssentialStone"
 dynamic = ["version"]
 dependencies = ["typing_extensions>=4.0"]
 authors = [
-    { name = "Endstone Developers", email = "hello@endstone.dev" },
+    { name = "LenlenlL6" },
+    { name = "literalllyaturtle" }
 ]
-description = "Python example plugin for Endstone servers"
+description = "Provide some extra for your survival server!"
 readme = "README.md"
 license = { file = "LICENSE" }
 keywords = ["endstone", "plugin"]
@@ -27,14 +28,8 @@ classifiers = [
 [project.optional-dependencies]
 dev = ["endstone", "ruff"]
 
-[project.urls]
-Homepage = "https://github.com/EndstoneMC/python-example-plugin"
-Documentation = "https://endstone.dev/latest/"
-Changelog = "https://github.com/EndstoneMC/python-example-plugin/blob/main/CHANGELOG.md"
-Issues = "https://github.com/EndstoneMC/python-example-plugin/issues"
-
 [project.entry-points."endstone"]
-example = "endstone_example:ExamplePlugin"
+example = "LoveGraphics:EssentialStone"
 
 [tool.ruff]
 line-length = 120
@@ -44,6 +39,3 @@ select = ["I", "E", "F"]
 
 [tool.hatch.version]
 source = "vcs"
-
-[tool.hatch.build.hooks.vcs]
-version-file = "src/endstone_example/_version.py"
