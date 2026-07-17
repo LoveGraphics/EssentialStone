@@ -1,27 +1,34 @@
 import json
 
-from endstone.plugin import Plugin
+from endstone.plugin import Plugin, PluginCommand
 from typing_extensions import override
 
+from endstone_essentialstone.Command import *
+
 class EssentialStone(Plugin):
-   prefix = "EssentialStone"
+    prefix = "EssentialStone"
 
-   api_version = "0.11"
+    api_version = "0.11"
 
-   @override
-   def on_load(self) -> None:
-      self.logger.info("Load languages...")
-      self.save_resources("eng.json")
-      language_data_path = self.data_folder / (self.config.get("language") + ".json")
-      try:
-          with open(language_data_path, "r") as f:
-              language = json.load(f)
-              self.logger.info("Current language: " + self.config.get("language"))
-      except:
-          self.logger.info("Invalid language in config file, disabling...")
-          self.server.plugin_manager.disable_plugin(self)
+    commands = {
+        "tpa": {
+            "description": "",
+            "usages": ["/tpa"],
+            "permissions": ["essentialstone.command.tpa"]
+        }
+    }
+    permissions = {
+        "essentialstone.command.tpa": {
+            "default": True
+        }
+    }
+
+    @override
+    def on_load(self) -> None:
+        self.logger.info("Initalizing datas...")
+        self.pluginConfig = Config(self)
 
 
-   @override
-   def on_enable(self) -> None:
-      self.save_default_config()
+    @override
+    def on_enable(self) -> None:
+        pass
