@@ -1,4 +1,6 @@
 {
     "request-cooldown": 5,
-    "delay-before-teleport-perform": 3
+    "request-expired-time": 10,
+    "delay-before-teleport-perform": 3,
+    "can-move": false
 }

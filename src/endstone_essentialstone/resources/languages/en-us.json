@@ -11,10 +11,15 @@
     },
 
     "tpa": {
-        "tpa-request-sent": "",
-        "tpa-request-accepted": "",
+        "tpa-request-sent": "§aThe TPA request has been sent to §c{target_name}§a.",
+        "tpa-request-received": "§aYou have received a TPA request from §e{sender_name}§a. /tpaccept to accept, /tpadeny to deny.",
+        "tpa-request-self": "§eCan't send a request to yourself.",
+        "tpa-request-empty": "§eYou don't have any requests.",
+        "tpa-request-accepted_sender": "§aYour TPA request has been accepted",
+        "tpa-request-accepted_receiver": "§aAccepted the TPA request",
         "tpa-request-aborted": "",
         "tpa-request-expired": "",
-        "tpa-description": "Test tpa---"
+        "tpa-cooldown": "§eYou have to wait §c{cooldown} §eseconds before sending a new TPA request,",
+        "tpa-description": ""
     }
 }
