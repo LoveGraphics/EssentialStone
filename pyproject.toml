@@ -3,7 +3,7 @@ requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
 
 [project]
-name = "EssentialStone"
+name = "endstone-essentialstone"
 dynamic = ["version"]
 dependencies = ["typing_extensions>=4.0"]
 authors = [
@@ -29,7 +29,7 @@ classifiers = [
 dev = ["endstone", "ruff"]
 
 [project.entry-points."endstone"]
-example = "LoveGraphics:EssentialStone"
+essentialstone = "endstone_essentialstone:EssentialStone"
 
 [tool.ruff]
 line-length = 120

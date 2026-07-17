@@ -1,6 +1,8 @@
 from endstone.plugin import Plugin
 from typing_extensions import override
 
+from endstone_essentialstone.utils.config import Config
+
 
 class EssentialStone(Plugin):
    prefix = "EssentialStone"
@@ -10,7 +12,8 @@ class EssentialStone(Plugin):
    @override
    def on_load(self) -> None:
       self.logger.info("Initalizing datas...")
-
+      self.pluginConfig = Config(self)
+      
    @override
    def on_enable(self) -> None:
-      self.save_default_config()
+       pass
