@@ -1,0 +1,18 @@
+{
+    "credits": ["literaryaturtle"],
+    "prefix": "[ EssentialStone ]",
+
+    "home": {
+        "home-created": "",
+        "home-max-amount-reached": "",
+        "home-teleporting-message": "",
+        "home-teleported-message": ""
+    },
+
+    "tpa": {
+        "tpa-request-sent": "",
+        "tpa-request-accepted": "",
+        "tpa-request-aborted": "",
+        "tpa-request-expired": ""
+    }
+}

@@ -3,7 +3,11 @@ requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
 
 [project]
+<<<<<<< HEAD
 name = "endstone_essentialstone"
+=======
+name = "endstone-essentialstone"
+>>>>>>> e6c91a9fb3c486f764d628af3c06d971fade0d63
 dynamic = ["version"]
 dependencies = ["typing_extensions>=4.0"]
 authors = [
