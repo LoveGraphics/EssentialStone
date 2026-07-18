@@ -15,11 +15,16 @@
         "tpa-request-received": "§aYou have received a TPA request from §e{sender_name}§a. /tpaccept to accept, /tpadeny to deny.",
         "tpa-request-self": "§eCan't send a request to yourself.",
         "tpa-request-empty": "§eYou don't have any requests.",
-        "tpa-request-accepted_sender": "§aYour TPA request has been accepted",
-        "tpa-request-accepted_receiver": "§aAccepted the TPA request",
-        "tpa-request-aborted": "",
-        "tpa-request-expired": "",
-        "tpa-cooldown": "§eYou have to wait §c{cooldown} §eseconds before sending a new TPA request,",
+        "tpa-request-args": "§eYou have to enter the name of the person you want to send the request to.§r",
+        "tpa-request-accepted-sender": "§aYour TPA request has been accepted.",
+        "tpa-request-accepted-target": "§aAccepted the TPA request.",
+        "tpa-request-offline": "§eThis player is currently offline.",
+        "tpa-request-not-in-list": "§eYou don't have any requests from §c{sender_name}.",
+        "tpa-request-denied-sender": "§eYour request has been denied.",
+        "tpa-request-denied-target": "§eRequest has been denied.",
+        "tpa-request-expired": "§eThe TPA request to §c{target_name} has expired.",
+        "tpa-cooldown": "§eYou have to wait §c{cooldown} §eseconds before sending a new TPA request.",
+        "tpa-teleport-popup": "§aTeleport in §c{time} §asecond(s).",
         "tpa-description": ""
     }
 }
